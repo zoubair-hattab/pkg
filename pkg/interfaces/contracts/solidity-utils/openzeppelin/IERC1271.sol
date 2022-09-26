@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
-// OpenZeppelin Contracts v4.4.1 (interfaces/IERC1271.sol)
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 
 /**
  * @dev Interface of the ERC1271 standard signature validation method for

@@ -12,21 +12,21 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-interfaces/contracts/pool-stable/StablePoolUserData.sol";
-import "@balancer-labs/v2-interfaces/contracts/solidity-utils/helpers/BalancerErrors.sol";
-import "@balancer-labs/v2-interfaces/contracts/standalone-utils/IProtocolFeePercentagesProvider.sol";
-import "@balancer-labs/v2-interfaces/contracts/pool-utils/IRateProvider.sol";
+import "../../interfaces/contracts/pool-stable/StablePoolUserData.sol";
+import "../../interfaces/contracts/solidity-utils/helpers/BalancerErrors.sol";
+import "../../interfaces/contracts/standalone-utils/IProtocolFeePercentagesProvider.sol";
+import "../../interfaces/contracts/pool-utils/IRateProvider.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/ERC20Helpers.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol";
+import "../../solidity-utils/contracts/math/FixedPoint.sol";
+import "../../solidity-utils/contracts/math/Math.sol";
+import "../../solidity-utils/contracts/helpers/ERC20Helpers.sol";
+import "../../solidity-utils/contracts/helpers/InputHelpers.sol";
 
-import "@balancer-labs/v2-pool-utils/contracts/BaseGeneralPool.sol";
-import "@balancer-labs/v2-pool-utils/contracts/rates/PriceRateCache.sol";
+import "../../pool-utils/contracts/BaseGeneralPool.sol";
+import "../../pool-utils/contracts/rates/PriceRateCache.sol";
 
 import "./ComposableStablePoolStorage.sol";
 import "./ComposableStablePoolRates.sol";

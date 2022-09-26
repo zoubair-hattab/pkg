@@ -12,17 +12,17 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-interfaces/contracts/solidity-utils/helpers/BalancerErrors.sol";
+import "../../interfaces/contracts/solidity-utils/helpers/BalancerErrors.sol";
 
-import "@balancer-labs/v2-interfaces/contracts/vault/IVault.sol";
-import "@balancer-labs/v2-interfaces/contracts/standalone-utils/IBalancerQueries.sol";
-import "@balancer-labs/v2-interfaces/contracts/pool-linear/ILinearPool.sol";
+import "../../interfaces/contracts/vault/IVault.sol";
+import "../../interfaces/contracts/standalone-utils/IBalancerQueries.sol";
+import "../../interfaces/contracts/pool-linear/ILinearPool.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol";
+import "../../solidity-utils/contracts/math/FixedPoint.sol";
+import "../../solidity-utils/contracts/openzeppelin/SafeERC20.sol";
 
 abstract contract LinearPoolRebalancer {
     using SafeERC20 for IERC20;

@@ -1,30 +1,19 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
 
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
 
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-interfaces/contracts/solidity-utils/helpers/IAuthentication.sol";
-import "@balancer-labs/v2-interfaces/contracts/liquidity-mining/IFeeDistributor.sol";
-import "@balancer-labs/v2-interfaces/contracts/liquidity-mining/IVotingEscrow.sol";
+import "../../../interfaces/contracts/solidity-utils/helpers/IAuthentication.sol";
+import "../../../interfaces/contracts/liquidity-mining/IFeeDistributor.sol";
+import "../../../interfaces/contracts/liquidity-mining/IVotingEscrow.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/OptionalOnlyCaller.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeMath.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol";
+import "../../../solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol";
+import "../../../solidity-utils/contracts/helpers/OptionalOnlyCaller.sol";
+import "../../../solidity-utils/contracts/helpers/InputHelpers.sol";
+import "../../../solidity-utils/contracts/openzeppelin/SafeERC20.sol";
+import "../../../solidity-utils/contracts/openzeppelin/SafeMath.sol";
+import "../../../solidity-utils/contracts/math/Math.sol";
 
 // solhint-disable not-rely-on-time
 

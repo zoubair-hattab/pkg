@@ -12,19 +12,19 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-interfaces/contracts/solidity-utils/helpers/BalancerErrors.sol";
-import "@balancer-labs/v2-interfaces/contracts/solidity-utils/misc/IWETH.sol";
-import "@balancer-labs/v2-interfaces/contracts/vault/IVault.sol";
-import "@balancer-labs/v2-interfaces/contracts/vault/IBasePool.sol";
+import "../../interfaces/contracts/solidity-utils/helpers/BalancerErrors.sol";
+import "../../interfaces/contracts/solidity-utils/misc/IWETH.sol";
+import "../../interfaces/contracts/vault/IVault.sol";
+import "../../interfaces/contracts/vault/IBasePool.sol";
 
-import "@balancer-labs/v2-interfaces/contracts/standalone-utils/IBalancerQueries.sol";
+import "../../interfaces/contracts/standalone-utils/IBalancerQueries.sol";
 
-import "@balancer-labs/v2-vault/contracts/AssetHelpers.sol";
+import "../../vault/contracts/AssetHelpers.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol";
+import "../../solidity-utils/contracts/helpers/InputHelpers.sol";
 
 /**
  * @dev This contract simply builds on top of the Balancer V2 architecture to provide useful helpers to users.

@@ -12,14 +12,14 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 
-import "@balancer-labs/v2-interfaces/contracts/liquidity-mining/IBalancerToken.sol";
-import "@balancer-labs/v2-interfaces/contracts/standalone-utils/IBALTokenHolder.sol";
-import "@balancer-labs/v2-interfaces/contracts/vault/IVault.sol";
+import "../../interfaces/contracts/liquidity-mining/IBalancerToken.sol";
+import "../../interfaces/contracts/standalone-utils/IBALTokenHolder.sol";
+import "../../interfaces/contracts/vault/IVault.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/SingletonAuthentication.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol";
+import "../../solidity-utils/contracts/helpers/SingletonAuthentication.sol";
+import "../../solidity-utils/contracts/openzeppelin/SafeERC20.sol";
 
 /**
  * @dev This contract simply holds the BAL token and delegates to Balancer Governance the permission to withdraw it. It

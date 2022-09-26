@@ -13,7 +13,7 @@ import "./IAuthorizer.sol";
 import "./IFlashLoanRecipient.sol";
 import "./IProtocolFeesCollector.sol";
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 
 
 interface IVault is ISignaturesValidator, ITemporarilyPausable, IAuthentication {

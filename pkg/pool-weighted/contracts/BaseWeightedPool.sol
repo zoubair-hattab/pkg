@@ -12,15 +12,15 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-interfaces/contracts/pool-weighted/WeightedPoolUserData.sol";
+import "../../interfaces/contracts/pool-weighted/WeightedPoolUserData.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol";
+import "../../solidity-utils/contracts/math/FixedPoint.sol";
+import "../../solidity-utils/contracts/helpers/InputHelpers.sol";
 
-import "@balancer-labs/v2-pool-utils/contracts/BaseMinimalSwapInfoPool.sol";
+import "../../pool-utils/contracts/BaseMinimalSwapInfoPool.sol";
 
 import "./WeightedMath.sol";
 

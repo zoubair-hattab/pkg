@@ -12,12 +12,12 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 
-import "@balancer-labs/v2-interfaces/contracts/solidity-utils/helpers/BalancerErrors.sol";
-import "@balancer-labs/v2-interfaces/contracts/standalone-utils/IProtocolFeePercentagesProvider.sol";
+import "../../../interfaces/contracts/solidity-utils/helpers/BalancerErrors.sol";
+import "../../../interfaces/contracts/standalone-utils/IProtocolFeePercentagesProvider.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeCast.sol";
+import "../../../solidity-utils/contracts/openzeppelin/SafeCast.sol";
 
 import "../RecoveryMode.sol";
 

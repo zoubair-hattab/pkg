@@ -12,14 +12,14 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-interfaces/contracts/vault/IProtocolFeesCollector.sol";
-import "@balancer-labs/v2-interfaces/contracts/standalone-utils/IProtocolFeePercentagesProvider.sol";
+import "../../interfaces/contracts/vault/IProtocolFeesCollector.sol";
+import "../../interfaces/contracts/standalone-utils/IProtocolFeePercentagesProvider.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/SingletonAuthentication.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeCast.sol";
+import "../../solidity-utils/contracts/helpers/SingletonAuthentication.sol";
+import "../../solidity-utils/contracts/openzeppelin/SafeCast.sol";
 
 contract ProtocolFeePercentagesProvider is IProtocolFeePercentagesProvider, SingletonAuthentication {
     using SafeCast for uint256;

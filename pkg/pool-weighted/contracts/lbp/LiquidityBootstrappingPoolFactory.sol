@@ -12,13 +12,13 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-interfaces/contracts/vault/IVault.sol";
+import "../../../interfaces/contracts/vault/IVault.sol";
 
-import "@balancer-labs/v2-pool-utils/contracts/factories/BasePoolFactory.sol";
-import "@balancer-labs/v2-pool-utils/contracts/factories/FactoryWidePauseWindow.sol";
+import "../../../pool-utils/contracts/factories/BasePoolFactory.sol";
+import "../../../pool-utils/contracts/factories/FactoryWidePauseWindow.sol";
 
 import "./LiquidityBootstrappingPool.sol";
 

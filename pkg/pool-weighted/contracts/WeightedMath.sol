@@ -12,11 +12,11 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol";
+import "../../solidity-utils/contracts/helpers/InputHelpers.sol";
+import "../../solidity-utils/contracts/math/FixedPoint.sol";
+import "../../solidity-utils/contracts/math/Math.sol";
 
 // These functions start with an underscore, as if they were part of a contract and not a library. At some point this
 // should be fixed.

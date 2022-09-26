@@ -12,13 +12,13 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 
-import "@balancer-labs/v2-interfaces/contracts/solidity-utils/helpers/BalancerErrors.sol";
-import "@balancer-labs/v2-interfaces/contracts/solidity-utils/openzeppelin/IERC20.sol";
-import "@balancer-labs/v2-interfaces/contracts/pool-utils/IRateProvider.sol";
+import "../../interfaces/contracts/solidity-utils/helpers/BalancerErrors.sol";
+import "../../interfaces/contracts/solidity-utils/openzeppelin/IERC20.sol";
+import "../../interfaces/contracts/pool-utils/IRateProvider.sol";
 
-import "@balancer-labs/v2-pool-utils/contracts/BasePool.sol";
+import "../../pool-utils/contracts/BasePool.sol";
 
 import "./StableMath.sol";
 

@@ -12,13 +12,13 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-interfaces/contracts/standalone-utils/IBalancerRelayer.sol";
+import "../../../interfaces/contracts/standalone-utils/IBalancerRelayer.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/Address.sol";
+import "../../../solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol";
+import "../../../solidity-utils/contracts/openzeppelin/Address.sol";
 
 /**
  * @title Balancer Relayer

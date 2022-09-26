@@ -11,7 +11,7 @@ import "../../interfaces/contracts/vault/IAsset.sol";
 import "../../solidity-utils/contracts/openzeppelin/MerkleProof.sol";
 import "../../solidity-utils/contracts/openzeppelin/SafeERC20.sol";
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 
 contract MerkleOrchard {
     using SafeERC20 for IERC20;

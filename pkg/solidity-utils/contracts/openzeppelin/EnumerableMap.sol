@@ -9,7 +9,7 @@
 // Additionally, the base private functions that work on bytes32 were removed and replaced with a native implementation
 // for IERC20 keys, to reduce bytecode size and runtime costs.
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 
 import "../../../interfaces/contracts/solidity-utils/helpers/BalancerErrors.sol";
 import "../../../interfaces/contracts/solidity-utils/openzeppelin/IERC20.sol";

@@ -12,20 +12,20 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-interfaces/contracts/vault/IVault.sol";
-import "@balancer-labs/v2-interfaces/contracts/vault/IBasePool.sol";
-import "@balancer-labs/v2-interfaces/contracts/vault/IGeneralPool.sol";
-import "@balancer-labs/v2-interfaces/contracts/vault/IMinimalSwapInfoPool.sol";
+import "../../../../interfaces/contracts/vault/IVault.sol";
+import "../../../../interfaces/contracts/vault/IBasePool.sol";
+import "../../../../interfaces/contracts/vault/IGeneralPool.sol";
+import "../../../../interfaces/contracts/vault/IMinimalSwapInfoPool.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/TemporarilyPausable.sol";
+import "../../../../solidity-utils/contracts/helpers/TemporarilyPausable.sol";
 
-import "@balancer-labs/v2-pool-utils/contracts/lib/PoolRegistrationLib.sol";
-import "@balancer-labs/v2-pool-utils/contracts/BalancerPoolToken.sol";
-import "@balancer-labs/v2-pool-utils/contracts/BasePoolAuthorization.sol";
-import "@balancer-labs/v2-pool-utils/contracts/RecoveryMode.sol";
+import "../../../../pool-utils/contracts/lib/PoolRegistrationLib.sol";
+import "../../../../pool-utils/contracts/BalancerPoolToken.sol";
+import "../../../../pool-utils/contracts/BasePoolAuthorization.sol";
+import "../../../../pool-utils/contracts/RecoveryMode.sol";
 
 // solhint-disable max-states-count
 

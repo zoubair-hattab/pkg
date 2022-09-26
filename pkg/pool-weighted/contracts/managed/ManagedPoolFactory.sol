@@ -12,10 +12,10 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-pool-utils/contracts/controllers/ManagedPoolController.sol";
+import "../../../pool-utils/contracts/controllers/ManagedPoolController.sol";
 
 import "./BaseManagedPoolFactory.sol";
 

@@ -12,21 +12,21 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-interfaces/contracts/pool-weighted/WeightedPoolUserData.sol";
-import "@balancer-labs/v2-interfaces/contracts/pool-utils/IControlledManagedPool.sol";
-import "@balancer-labs/v2-interfaces/contracts/standalone-utils/IProtocolFeePercentagesProvider.sol";
+import "../../../interfaces/contracts/pool-weighted/WeightedPoolUserData.sol";
+import "../../../interfaces/contracts/pool-utils/IControlledManagedPool.sol";
+import "../../../interfaces/contracts/standalone-utils/IProtocolFeePercentagesProvider.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/ERC20Helpers.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/ScalingHelpers.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/WordCodec.sol";
+import "../../../solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol";
+import "../../../solidity-utils/contracts/helpers/ERC20Helpers.sol";
+import "../../../solidity-utils/contracts/helpers/ScalingHelpers.sol";
+import "../../../solidity-utils/contracts/helpers/WordCodec.sol";
 
-import "@balancer-labs/v2-pool-utils/contracts/protocol-fees/InvariantGrowthProtocolSwapFees.sol";
-import "@balancer-labs/v2-pool-utils/contracts/protocol-fees/ProtocolFeeCache.sol";
-import "@balancer-labs/v2-pool-utils/contracts/protocol-fees/ProtocolAUMFees.sol";
+import "../../../pool-utils/contracts/protocol-fees/InvariantGrowthProtocolSwapFees.sol";
+import "../../../pool-utils/contracts/protocol-fees/ProtocolFeeCache.sol";
+import "../../../pool-utils/contracts/protocol-fees/ProtocolAUMFees.sol";
 
 import "../lib/GradualValueChange.sol";
 import "../WeightedMath.sol";

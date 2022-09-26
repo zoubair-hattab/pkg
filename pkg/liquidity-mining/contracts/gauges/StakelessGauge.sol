@@ -1,27 +1,14 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
 
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
+pragma solidity ^0.8.0;
 
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-pragma solidity ^0.7.0;
-
-import "@balancer-labs/v2-interfaces/contracts/solidity-utils/openzeppelin/IERC20.sol";
-import "@balancer-labs/v2-interfaces/contracts/liquidity-mining/IBalancerMinter.sol";
-import "@balancer-labs/v2-interfaces/contracts/liquidity-mining/IBalancerTokenAdmin.sol";
-import "@balancer-labs/v2-interfaces/contracts/liquidity-mining/IGaugeController.sol";
-import "@balancer-labs/v2-interfaces/contracts/liquidity-mining/IStakelessGauge.sol";
-
-import "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol";
+import "../../../interfaces/contracts/solidity-utils/openzeppelin/IERC20.sol";
+import "../../../interfaces/contracts/liquidity-mining/IBalancerMinter.sol";
+import "../../../interfaces/contracts/liquidity-mining/IBalancerTokenAdmin.sol";
+import "../../../interfaces/contracts/liquidity-mining/IGaugeController.sol";
+import "../../../interfaces/contracts/liquidity-mining/IStakelessGauge.sol";
+import "../../../solidity-utils/contracts/math/Math.sol";
+import "../../../solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol";
 
 abstract contract StakelessGauge is IStakelessGauge, ReentrancyGuard {
     uint256 public constant MAX_RELATIVE_WEIGHT_CAP = 1e18;
