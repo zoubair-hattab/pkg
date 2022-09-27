@@ -13,7 +13,7 @@ import "../../solidity-utils/contracts/openzeppelin/SafeERC20.sol";
 import "../../solidity-utils/contracts/openzeppelin/Ownable.sol";
 import "../../solidity-utils/contracts/math/FixedPoint.sol";
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.7.0;
 
 contract MerkleRedeem is Ownable {
     using FixedPoint for uint256;

@@ -14,15 +14,20 @@
 
 pragma solidity ^0.7.0;
 
-import "./ILiquidityGaugeFactory.sol";
+import "../openzeppelin/ERC20Burnable.sol";
+import "../openzeppelin/ERC20Permit.sol";
+import "../openzeppelin/ERC20.sol";
 
-interface IBaseGaugeFactory is ILiquidityGaugeFactory {
-    /**
-     * @notice Deploys a new gauge for the given recipient, with an initial maximum relative weight cap.
-     * The recipient can either be a pool in mainnet, or a recipient in a child chain.
-     * @param recipient The address to receive BAL minted from the gauge
-     * @param relativeWeightCap The relative weight cap for the created gauge
-     * @return The address of the deployed gauge
-     */
-    function create(address recipient, uint256 relativeWeightCap) external returns (address);
+contract TestToken is ERC20, ERC20Burnable, ERC20Permit {
+    constructor(
+        string memory name,
+        string memory symbol,
+        uint8 decimals
+    ) ERC20(name, symbol) ERC20Permit(name) {
+        _setupDecimals(decimals);
+    }
+
+    function mint(address recipient, uint256 amount) external {
+        _mint(recipient, amount);
+    }
 }

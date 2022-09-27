@@ -15,10 +15,10 @@
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-interfaces/contracts/solidity-utils/misc/IERC4626.sol";
-import "@balancer-labs/v2-interfaces/contracts/vault/IVault.sol";
+import "../../../interfaces/contracts/solidity-utils/misc/IERC4626.sol";
+import "../../../interfaces/contracts/vault/IVault.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/Address.sol";
+import "../../../solidity-utils/contracts/openzeppelin/Address.sol";
 
 import "./IBaseRelayerLibrary.sol";
 

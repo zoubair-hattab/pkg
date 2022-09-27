@@ -16,10 +16,10 @@
 
 pragma solidity ^0.7.0;
 
-import "@balancer-labs/v2-interfaces/contracts/pool-linear/IButtonWrapper.sol";
+import "../../../interfaces/contracts/pool-linear/IButtonWrapper.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol";
+import "../../../solidity-utils/contracts/openzeppelin/ERC20.sol";
+import "../../../solidity-utils/contracts/openzeppelin/SafeERC20.sol";
 
 contract MockUnbuttonERC20 is ERC20, IButtonWrapper {
     using SafeERC20 for IERC20;

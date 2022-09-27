@@ -15,15 +15,15 @@
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-interfaces/contracts/solidity-utils/openzeppelin/IERC20.sol";
+import "../../../interfaces/contracts/solidity-utils/openzeppelin/IERC20.sol";
 
-import "@balancer-labs/v2-interfaces/contracts/vault/IVault.sol";
-import "@balancer-labs/v2-interfaces/contracts/vault/IBasePool.sol";
-import "@balancer-labs/v2-interfaces/contracts/vault/IGeneralPool.sol";
-import "@balancer-labs/v2-interfaces/contracts/vault/IPoolSwapStructs.sol";
-import "@balancer-labs/v2-interfaces/contracts/vault/IMinimalSwapInfoPool.sol";
+import "../../../interfaces/contracts/vault/IVault.sol";
+import "../../../interfaces/contracts/vault/IBasePool.sol";
+import "../../../interfaces/contracts/vault/IGeneralPool.sol";
+import "../../../interfaces/contracts/vault/IPoolSwapStructs.sol";
+import "../../../interfaces/contracts/vault/IMinimalSwapInfoPool.sol";
 
-import "@balancer-labs/v2-vault/contracts/ProtocolFeesCollector.sol";
+import "../../../vault/contracts/ProtocolFeesCollector.sol";
 
 contract MockVault is IPoolSwapStructs {
     struct Pool {

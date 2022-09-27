@@ -14,8 +14,8 @@
 
 pragma solidity ^0.7.0;
 
-import "@balancer-labs/v2-interfaces/contracts/solidity-utils/openzeppelin/IERC20.sol";
-import "@balancer-labs/v2-interfaces/contracts/pool-utils/IAssetManager.sol";
+import "../../../interfaces/contracts/solidity-utils/openzeppelin/IERC20.sol";
+import "../../../interfaces/contracts/pool-utils/IAssetManager.sol";
 
 contract MockAssetManager is IAssetManager {
     event Rebalanced(address assetManager, bytes32 poolId, IERC20 token, bool force);

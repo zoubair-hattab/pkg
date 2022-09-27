@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.7.0;
 
 /**
  * @dev Interface for the OptionalOnlyCaller helper, used to opt in to a caller

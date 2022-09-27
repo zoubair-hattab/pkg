@@ -3,7 +3,7 @@ pragma solidity ^0.7.0;
 
 import "forge-std/Test.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol";
+import "../../../solidity-utils/contracts/math/FixedPoint.sol";
 
 import "../../contracts/protocol-fees/ProtocolFees.sol";
 

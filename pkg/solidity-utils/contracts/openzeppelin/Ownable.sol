@@ -3,7 +3,7 @@
 // Based on the Ownable library from OpenZeppelin Contracts, altered to reduce runtime gas by dropping
 // support for the GSN.
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.7.0;
 
 import "../../../interfaces/contracts/solidity-utils/helpers/BalancerErrors.sol";
 

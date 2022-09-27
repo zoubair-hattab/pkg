@@ -3,8 +3,8 @@ pragma solidity ^0.7.0;
 
 import "forge-std/Test.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol";
+import "../../../solidity-utils/contracts/math/FixedPoint.sol";
+import "../../../solidity-utils/contracts/math/Math.sol";
 
 import "../../contracts/RecoveryMode.sol";
 import "../../contracts/test/MockRecoveryMode.sol";

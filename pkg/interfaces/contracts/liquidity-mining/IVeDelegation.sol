@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.7.0;
 
 // For compatibility, we're keeping the same function names as in the original Curve code, including the mixed-case
 // naming convention.

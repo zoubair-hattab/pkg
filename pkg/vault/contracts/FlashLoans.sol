@@ -16,7 +16,7 @@
 // implementation and terminology and interfaces are intentionally kept
 // similar
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
 import "../../interfaces/contracts/solidity-utils/helpers/BalancerErrors.sol";

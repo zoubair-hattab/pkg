@@ -14,8 +14,8 @@
 
 pragma solidity ^0.7.0;
 
-import "@balancer-labs/v2-interfaces/contracts/liquidity-mining/IBalancerToken.sol";
-import "@balancer-labs/v2-interfaces/contracts/vault/IVault.sol";
+import "../../../interfaces/contracts/liquidity-mining/IBalancerToken.sol";
+import "../../../interfaces/contracts/vault/IVault.sol";
 
 /**
  * @dev This is an incomplete implementation of the token admin. It provides just enough functionality to be able to

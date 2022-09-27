@@ -15,9 +15,9 @@
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-interfaces/contracts/vault/IVault.sol";
+import "../../../interfaces/contracts/vault/IVault.sol";
 
-import "@balancer-labs/v2-interfaces/contracts/solidity-utils/openzeppelin/IERC20.sol";
+import "../../../interfaces/contracts/solidity-utils/openzeppelin/IERC20.sol";
 
 contract MockWithdrawDepositAssetManager {
     IVault private immutable _vault;

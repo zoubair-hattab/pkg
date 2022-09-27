@@ -15,7 +15,7 @@
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-interfaces/contracts/solidity-utils/helpers/BalancerErrors.sol";
+import "../../../interfaces/contracts/solidity-utils/helpers/BalancerErrors.sol";
 
 abstract contract MockFailureModes {
     enum FailureMode { INVARIANT, PRICE_RATE }

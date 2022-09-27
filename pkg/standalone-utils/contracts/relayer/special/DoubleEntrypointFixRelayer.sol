@@ -15,13 +15,13 @@
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-interfaces/contracts/pool-stable/StablePoolUserData.sol";
-import "@balancer-labs/v2-interfaces/contracts/pool-weighted/WeightedPoolUserData.sol";
-import "@balancer-labs/v2-interfaces/contracts/vault/IVault.sol";
-import "@balancer-labs/v2-interfaces/contracts/vault/IFlashLoanRecipient.sol";
+import "../../../../interfaces/contracts/pool-stable/StablePoolUserData.sol";
+import "../../../../interfaces/contracts/pool-weighted/WeightedPoolUserData.sol";
+import "../../../../interfaces/contracts/vault/IVault.sol";
+import "../../../../interfaces/contracts/vault/IFlashLoanRecipient.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/ERC20Helpers.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/SafeERC20.sol";
+import "../../../../solidity-utils/contracts/helpers/ERC20Helpers.sol";
+import "../../../../solidity-utils/contracts/openzeppelin/SafeERC20.sol";
 
 /**
  * @title DoubleEntrypointFixRelayer

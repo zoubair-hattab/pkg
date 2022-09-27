@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.7.0;
 
 library BasePoolUserData {
     // Special ExitKind for all pools, used in Recovery Mode. Use the max 8-bit value to prevent conflicts
